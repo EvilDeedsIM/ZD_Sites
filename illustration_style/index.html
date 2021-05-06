@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Web Design</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="wrapper">
+        <a href="/">
+          <img src="img/logo2.png" alt="logo" />
+        </a>
+
+        <button id="submenu" onclick="showMenu(event)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Menu links -->
+
+        <ul class="menu-left">
+          <li>
+            <a href="">How we function?</a>
+          </li>
+
+          <li>
+            <a href="">Services</a>
+          </li>
+
+          <li>
+            <a href="">Pricing</a>
+          </li>
+
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="menu-right">
+          <li class="menu-cta"><a href="#">Get Started</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MENU END -->
+
+    <!-- INTRO PAGE START -->
+
+    <section id="intro">
+      <div class="top-right-gradient"></div>
+
+      <div class="wrapper">
+        <div class="intro-left">
+          <h1>Creative Insights to Grow your Business</h1>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+            soluta nulla excepturi?
+          </p>
+
+          <a href="#" class="intro-cta">Try it for free</a>
+        </div>
+
+        <div class="intro-right">
+          <img src="img/undraw_growth_analytics_8btt.png" alt="image" />
+        </div>
+      </div>
+
+      <div class="bottom-left-gradient"></div>
+    </section>
+
+    <!-- INTRO PAGE END -->
+
+    <!-- ABOUT PAGE START -->
+
+    <section class="about">
+      <div class="wrapper">
+        <div class="about-left">
+          <img src="img/undraw_report_mx0a.svg" alt="image" />
+        </div>
+
+        <div class="about-right">
+          <h1>How we help YOU grow your business</h1>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            quas adipisci odit perspiciatis blanditiis similique.
+          </p>
+
+          <a href="#" class="cta">Learn more</a>
+        </div>
+      </div>
+
+      <div class="top-right-gradient"></div>
+    </section>
+
+    <!-- ABOUT PAGE END -->
+
+    <!-- Page banner start -->
+
+    <div class="page-banner">
+      <h1>Analytics Made Easy</h1>
+      <h3>Experience the next generation Analytics</h3>
+      <a href="#">Get Started</a>
+    </div>
+
+    <!-- Banner end -->
+
+    <footer>
+      <div class="wraper">
+        <div class="footer-left">
+          <a href="/">
+            <img src="img/logo2.png" alt="logo" />
+          </a>
+
+          <p class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+          </p>
+
+          <p class="footer-company-name">
+            Pulse Analytics &copy; 2021 - Made by EvilDeeds
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span>956 Central Rd.</span> Lakewood, NJ 08701</p>
+          </div>
+
+          <div>
+            <i class="fas fa-phone"></i>
+            <p>+1 555 123456789</p>
+          </div>
+
+          <div>
+            <i class="fas fa-envelope"></i>
+            <p><a href="#">your@email.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-connect">
+            <span>Connect with us</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+            asperiores nostrum repellat amet quis minima inventore!
+          </p>
+
+          <div class="footer-icons">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function showMenu(event) {
+        event.preventDefault();
+
+        let element = document.getElementById("header");
+
+        if (element.classList.contains("active")) {
+          element.className = "";
+        } else {
+          element.className = "active";
+        }
+      }
+    </script>
+  </body>
+</html>
