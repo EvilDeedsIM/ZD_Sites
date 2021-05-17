@@ -4,21 +4,309 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <main>
-      <a href="css_flexbox/index.html" target="_blank">Css Flexbox</a>
-      <a href="mamon/dist/index.html" target="_blank">Mamon</a>
-      <a href="responsive_login_reg/index.html" target="_blank">
-        Responsive Login & Registration
-      </a>
-      <a href="porten/index.html" target="_blank">Porten</a>
-      <a href="modern_web_design/" target="_blank">Modern Web Design</a>
-      <a href="illustration_style/" target="_blank">Illustration Style</a>
-      <a href="ojjo/" target="_blank">OJJO</a>
-      <a href="webovio/" target="_blank">Webovio</a>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav">
+          <div class="container">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link header__link--active">Main</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Portfolio</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Blog</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">About Me</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="header__info">
+          <h1 class="header__title">Hello on 2i0 website!</h1>
+          <div class="header__image">
+            <img src="img/header-bg.svg" alt="Header image" />
+          </div>
+          <div class="header__bg-image"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="projects">
+        <div class="container projects__container">
+          <h2 class="projects__title">Projects</h2>
+          <p class="projects__descr">Previews of my works</p>
+
+          <ul class="projects__list">
+            <li class="projects__item project">
+              <div class="project__image">
+                <img
+                  class="project__img"
+                  src="img/flexbox.jpg"
+                  alt="Project 1 picture"
+                />
+              </div>
+              <div class="project__bottom">
+                <span class="project__number">01.</span>
+                <a href="#" class="project__link">View project</a>
+              </div>
+            </li>
+            <li class="projects__item project">
+              <div class="project__image">
+                <img
+                  class="project__img"
+                  src="img/modern.jpg"
+                  alt="Project 1 picture"
+                />
+              </div>
+              <div class="project__bottom">
+                <span class="project__number">02.</span>
+                <a href="#" class="project__link">View project</a>
+              </div>
+            </li>
+            <li class="projects__item project">
+              <div class="project__image">
+                <img
+                  class="project__img"
+                  src="img/webovio.jpg"
+                  alt="Project 1 picture"
+                />
+              </div>
+              <div class="project__bottom">
+                <span class="project__number">03.</span>
+                <a href="#" class="project__link">View project</a>
+              </div>
+            </li>
+
+            <li class="projects__item project">
+              <div class="project__image">
+                <img
+                  class="project__img"
+                  src="img/ojjo.jpg"
+                  alt="Project 1 picture"
+                />
+              </div>
+              <div class="project__bottom">
+                <span class="project__number">04.</span>
+                <a href="#" class="project__link">View project</a>
+              </div>
+            </li>
+
+            <li class="projects__item project project--more">
+              <a href="#" class="project__link project__link--more">
+                Show More
+              </a>
+            </li>
+            <li class="projects__item project">
+              <div class="project__image">
+                <img
+                  class="project__img"
+                  src="img/porten.jpg"
+                  alt="Project 1 picture"
+                />
+              </div>
+              <div class="project__bottom">
+                <span class="project__number">05.</span>
+                <a href="#" class="project__link">View project</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills__container container">
+          <div class="skills__bg-image"></div>
+
+          <h2 class="skills__title">Skills</h2>
+
+          <div class="skills__info">
+            <div class="skills__block">
+              <h3 class="skills__block__title">Coder</h3>
+              <ul class="skills__list">
+                <li class="skills__item item">
+                  <img class="item__logo" src="img/html.svg" alt="Item logo" />
+                  <div class="item__info">
+                    <div class="item__text">
+                      <p class="item__name">HTML</p>
+                      <p class="item__percent">70%</p>
+                    </div>
+                    <div class="item__progress">
+                      <div class="item__progress-bar bar-html"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="skills__item item">
+                  <img class="item__logo" src="img/css.svg" alt="Item logo" />
+                  <div class="item__info">
+                    <div class="item__text">
+                      <p class="item__name">CSS</p>
+                      <p class="item__percent">60%</p>
+                    </div>
+                    <div class="item__progress">
+                      <div class="item__progress-bar bar-css"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="skills__item item">
+                  <img class="item__logo" src="img/js.svg" alt="Item logo" />
+                  <div class="item__info">
+                    <div class="item__text">
+                      <p class="item__name">JavaScript</p>
+                      <p class="item__percent">20%</p>
+                    </div>
+                    <div class="item__progress">
+                      <div class="item__progress-bar bar-js"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <img
+              class="skills__graph"
+              src="img/coder-designer.svg"
+              alt="Skills graph"
+            />
+            <div class="skills__block">
+              <h3 class="skills__block__title">Design</h3>
+              <ul class="skills__list">
+                <li class="skills__item item">
+                  <img class="item__logo" src="img/figma.svg" alt="Item logo" />
+                  <div class="item__info">
+                    <div class="item__text">
+                      <p class="item__name">Figma</p>
+                      <p class="item__percent">40%</p>
+                    </div>
+                    <div class="item__progress">
+                      <div class="item__progress-bar bar-figma"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="skills__item item">
+                  <img
+                    class="item__logo"
+                    src="img/photoshop.svg"
+                    alt="Item logo"
+                  />
+                  <div class="item__info">
+                    <div class="item__text">
+                      <p class="item__name">Photoshop</p>
+                      <p class="item__percent">20%</p>
+                    </div>
+                    <div class="item__progress">
+                      <div class="item__progress-bar bar-photoshop"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container">
+          <h2 class="stats__title">stats</h2>
+
+          <ul class="stats__list">
+            <li class="stats__item item">
+              <span class="item__icon item__icon--smile"></span>
+              <p class="item__number">10</p>
+              <p class="item__descr">happy clients</p>
+            </li>
+            <li class="stats__item item">
+              <span class="item__icon item__icon--work"></span>
+              <p class="item__number">1,020</p>
+              <p class="item__descr">working hours</p>
+            </li>
+            <li class="stats__item item">
+              <span class="item__icon item__icon--complete"></span>
+              <p class="item__number">10</p>
+              <p class="item__descr">projects completed</p>
+            </li>
+            <li class="stats__item item">
+              <span class="item__icon item__icon--award"></span>
+              <p class="item__number">0</p>
+              <p class="item__descr">awards won</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="awards">
+        <div class="container">
+          <h2 class="awards__title">Awards</h2>
+          <p class="awards__descr">Going to get first one</p>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__bg-image"></div>
+
+          <h2 class="contacts__title">Contact Me</h2>
+
+          <form action="#" class="contacts__form form">
+            <input
+              class="form__username"
+              type="text"
+              placeholder="Your Name *"
+            />
+            <input
+              class="form__email"
+              type="email"
+              placeholder="Your E-mail *"
+            />
+            <textarea
+              class="form__message"
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message *"
+            ></textarea>
+            <button class="form__btn">send message</button>
+          </form>
+        </div>
+
+        <div class="contacts__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--tw"></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--in"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <p class="footer__text">Made with</p>
+        <div class="heart"></div>
+        <p class="footer__text">by EvilDeeds</p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy;&nbsp;2021&nbsp;|&nbsp;</p>
+        <a href="#">2i0.me</a>
+      </div>
+    </footer>
   </body>
 </html>
