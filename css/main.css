@@ -361,8 +361,8 @@ template {
 }
 
 html {
-  box-sizing: border-box;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 *,
@@ -876,7 +876,6 @@ h2 {
 
 .contacts {
   position: relative;
-  overflow: hidden;
   box-sizing: border-box;
   max-width: 600px;
   margin: 0 auto;
