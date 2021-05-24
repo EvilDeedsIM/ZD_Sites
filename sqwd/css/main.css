@@ -1230,7 +1230,8 @@ ul {
   letter-spacing: 1px;
 }
 
-.quote__title-job, .quote__title-span {
+.quote__title-job,
+.quote__title-span {
   color: #b8b8b8;
   font-weight: 300;
   font-size: 14px;
@@ -1411,7 +1412,9 @@ ul {
   margin-bottom: 39px;
 }
 
-.footer__address, .footer__phone, .footer__email {
+.footer__address,
+.footer__phone,
+.footer__email {
   font-weight: 300;
   font-size: 13px;
   line-height: 19px;
