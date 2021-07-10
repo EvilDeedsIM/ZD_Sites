@@ -821,6 +821,10 @@ ul {
   color: #363738;
 }
 
+.form {
+  margin-bottom: 140px;
+}
+
 .form .container {
   display: flex;
 }
@@ -921,4 +925,58 @@ ul {
   background-image: url("../img/add.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.video__title {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: #363738;
+  margin-bottom: 32px;
+}
+
+.video__desc {
+  font-family: "PT Sans";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
+  margin-bottom: 40px;
+}
+
+.video__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/3f78bac4069f640c2c613fd2944a451c.jpg");
+  width: 100%;
+  height: 621px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video .play__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.video .play__btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
