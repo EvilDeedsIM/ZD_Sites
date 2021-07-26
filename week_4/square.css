@@ -1,0 +1,45 @@
+:root {
+  font-size: 20px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(150deg, #111, #333);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.square {
+  width: 50%;
+  border: 1px solid #fff;
+}
+
+.square::after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
