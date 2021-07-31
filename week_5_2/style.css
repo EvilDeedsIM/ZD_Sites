@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500");
+
+:root {
+  --blue: #6cf;
+  --purple: #c6f;
+  --red: rgb(238, 98, 98);
+  --orange: #c60;
+  --yellow: #ffe066;
+  --green: #00b33c;
+  --black: #111;
+
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  background-color: var(--blue);
+  transition: 0.3s ease-out;
+}
+
+.container {
+  width: 80%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 16px;
+}
+
+.range {
+  position: relative;
+  width: 100%;
+  height: 9px;
+  background: transparent;
+  z-index: 1;
+}
+
+.range::-moz-range-thumb {
+  height: 30px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--black);
+  cursor: pointer;
+}
+
+.range::-moz-range-track {
+  width: 100%;
+  height: 16px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.dots {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dot {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  top: -44px;
+  left: -8.5px;
+  width: 32px;
+  height: 32px;
+  background-color: inherit;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--black), 0 2px 5px #666;
+}
+
+.dot::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
+  border-radius: 50%;
+}
