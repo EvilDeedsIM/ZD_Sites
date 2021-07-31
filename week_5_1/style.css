@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500");
+
+:root {
+  --blue: #6cf;
+  --purple: #c6f;
+  --red: #c00;
+  --orange: #c60;
+  --yellow: #ffe066;
+  --green: #00b33c;
+  --black: #111;
+
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  background-color: var(--blue);
+  transition: 0.3s ease-out;
+}
+
+.drag-line {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.drag-element {
+  position: absolute;
+  top: -0.25rem;
+  left: 0;
+  z-index: 2;
+  width: 1rem;
+  height: 1.5rem;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  transform: translate(0, 0);
+}
+
+.dot {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  cursor: pointer;
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: -0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  background-color: #c60;
+  box-shadow: 0 0 5px var(--black);
+  cursor: pointer;
+}
+
+.dot-blue::before {
+  background-color: var(--blue);
+}
+.dot-purple::before {
+  background-color: var(--purple);
+}
+.dot-orange::before {
+  background-color: var(--orange);
+}
+.dot-red::before {
+  background-color: var(--red);
+}
+.dot-yellow::before {
+  background-color: var(--yellow);
+}
+.dot-green::before {
+  background-color: var(--green);
+}
